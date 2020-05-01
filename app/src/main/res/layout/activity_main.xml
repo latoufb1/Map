@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/msu"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/spacing"
+            android:layout_width="wrap_content"
+            android:layout_height="203dp"
+            android:text="         "
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/msuCrest"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/msucrest" />
+
+        <Button
+            android:id="@+id/drive"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/my_button"
+            android:text="drive to msu"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="This app will assign you with a route to Montclair State University. Press the button to go!!!!"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
